@@ -1,0 +1,47 @@
+header{
+	background-color: #5b7989;
+	color: white;
+	border-radius: 15px;
+	height: 100px;
+}
+
+header > h1{
+	text-shadow: 2px 2px 2px #02010A;
+	position: relative;
+	left: 100px;
+}
+
+#inicio{
+	order: 1;
+}
+
+#paisajes{
+	order: 2;
+}
+
+#retratos{
+	order: 3;
+}
+
+#menu_enlaces{
+	padding: 0;
+}
+
+#menu_enlaces li{
+	display: inline;
+
+}
+
+#menu_enlaces li a{
+	border-right: 100px;
+	float: right;
+	padding:10px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #6c4675;
+	position: relative;
+	right: 100px;
+	
+	
+}
+
