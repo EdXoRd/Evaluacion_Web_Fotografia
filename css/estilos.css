@@ -1,47 +1,60 @@
+body{
+	background-color: #02010a;
+	font-family: 'Dancing Script';
+}
+
+
+
 header{
 	background-color: #5b7989;
-	color: white;
 	border-radius: 15px;
 	height: 100px;
+	display: flex;
+	align-items: center;
 }
 
 header > h1{
+	color: white;
 	text-shadow: 2px 2px 2px #02010A;
-	position: relative;
-	left: 100px;
+	margin-left: 5%;
 }
 
-#inicio{
-	order: 1;
-}
-
-#paisajes{
-	order: 2;
-}
-
-#retratos{
-	order: 3;
-}
-
-#menu_enlaces{
-	padding: 0;
-}
-
-#menu_enlaces li{
+h1, ul, li{
 	display: inline;
-
 }
 
 #menu_enlaces li a{
-	border-right: 100px;
-	float: right;
 	padding:10px;
+	padding-left: 20px;
+	padding-right: 20px;
 	text-decoration: none;
 	color: #ffffff;
-	background-color: #6c4675;
-	position: relative;
-	right: 100px;
-	
-	
+	border-radius: 15px;
 }
 
+#menu_enlaces{
+	margin-left: 5%;
+}
+
+#caja_central{
+	background-color: #82c3a6;
+}
+
+#caja_secundaria{
+	text-align: center;
+
+}
+
+#img_central{
+	display: block;
+	margin: auto;
+	padding: 20px;
+	width: 75%;
+	border-style: 1px solid black;
+}
+
+#img_izq, #img_der{
+	width: 40%;
+	border: 1px solid black;
+	margin: 20px;
+}
