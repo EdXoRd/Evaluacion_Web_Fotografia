@@ -5,7 +5,7 @@ body{
 
 header{
 	background-color: #5b7989;
-	border-radius: 15px;
+	border-radius: 10px 10px 0px 0px;
 	height: 100px;
 	display: flex;
 	align-items: center;
@@ -46,14 +46,14 @@ header h1{
 
 #caja_secundaria{
 	text-align: center;
-
+	background-color: #d5c75f;
 }
 
 #img_central{
 	display: block;
 	margin: auto;
 	padding: 20px;
-	width: 75%;
+	width: 50%;
 	border-style: 1px solid black;
 }
 
@@ -61,4 +61,24 @@ header h1{
 	width: 40%;
 	border: 1px solid black;
 	margin: 20px;
+}
+
+#img_izq:hover{
+	transition: ease 1s;
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 2px #82c3a6;
+	border-style: 2px solid black;
+}
+
+#img_der:hover{
+	transition: ease 1s;
+	transform: translate(5px, -20px);
+	box-shadow: 2px 2px 2px #82c3a6;
+	border-style: 2px solid black;
+}
+
+footer{
+	clear: both;
+	background-color: #C6d5c5;
+	border-radius: 0px 0px 10px 10px;
 }
