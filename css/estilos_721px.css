@@ -1,4 +1,4 @@
-@media all and (min-width: 721px)
+@media all and (min-width: 900px)
 {
 
 	.cabecera
@@ -72,14 +72,14 @@
 				{
 					padding-left: 4%;/
 				}
-				.redes_sociales a
+				.redes_sociales a,
 				{
 					font-size: 1em;
 				}
 			}
 
 
-	.contenido_paisajes
+	.contenido_paisajes, .contenido_retratos
 	{
 		display: inline;
 		text-align: center;

@@ -40,16 +40,26 @@ body
 }
 
 
-nav ul, .contacto a, .redes_sociales a
+/*nav ul, .contacto a, .redes_sociales a
 {
 	list-style: none;
+}*/
+
+
+.redes_sociales a, nav ul li a
+{
+	font-weight: bold;
+}
+
+.redes_sociales
+{
+	text-decoration: none;
 }
 
 
-nav ul li a, .redes_sociales a
+.cabecera a:active
 {
 	text-decoration: none;
-	font-weight: bold;
 }
 
 
@@ -71,7 +81,7 @@ nav ul li a, .redes_sociales a
 }
 
 
-div p, .redes_sociales a
+div p, .redes_sociales a, .cabecera a
 {
 	font-size: 1.2em;
 }
@@ -91,7 +101,7 @@ img
 }
 
 
-.imgs_secundarias, .imgs_paisajes
+.imgs_secundarias, .imgs_paisajes, .imgs_retratos
 {
 	margin: 0;
 	background: #d5c75f;
@@ -110,6 +120,7 @@ img
 
 .pie_pagina
 {
+	height: 100%;
 	min-height: 250px;
 	font-weight: bold;
 	background-color: #C6d5c5;

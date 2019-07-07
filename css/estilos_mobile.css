@@ -1,15 +1,21 @@
-@media all and (max-width: 720px)
+@media all and (max-width: 899px)
 {
-	.imgs_secundarias, .img_principal
+	.imgs_secundarias, .img_principal, .imgs_paisajes, .imgs_retratos
 	{
 		padding: 25px;
 
 	}
 
 
-	.img_central, .img_izq, .img_der
+	.img_central, .img_izq, .img_der, .img_1, .img_2, .img_3, .img_4, .img_5, .img_6
 	{
 		width: 100%;
+	}
+
+	.img_1, .img_2, .img_3, .img_4, .img_5, .img_6
+	{
+		margin-top: 25px;
+		margin-bottom: 25px;
 	}
 
 
