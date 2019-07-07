@@ -1,0 +1,132 @@
+@media all and (min-width: 721px)
+{
+
+	.cabecera
+	{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+
+	.cabecera h1
+	{
+		margin-left: 10%;
+	}
+
+
+	nav
+	{
+		float: right;
+		margin-right: 10%;
+		width: 370px;
+	}
+
+
+	nav ul li
+	{
+		display: inline-block;
+		padding: 20px;
+	}	
+
+
+	img
+	{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		max-width: 60%;
+	}
+
+
+	.img_principal
+	{
+		box-sizing: border-box;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+
+	.img_central
+	{
+		display: block;
+		margin: auto;
+	}
+
+
+	.imgs_secundarias
+	{
+		text-align: center;
+		justify-content: space-between;
+	}
+
+
+	.img_izq, .img_der
+	{
+		max-width: 35%;
+	}
+	
+
+			@media all and (min-width: 721px) and (max-width: 900px)
+			{
+				.pie_pagina
+				{
+					padding-left: 4%;/
+				}
+				.redes_sociales a
+				{
+					font-size: 1em;
+				}
+			}
+
+
+	.contenido_paisajes
+	{
+		display: inline;
+		text-align: center;
+	}
+
+	
+	.img_1, .img_2, .img_3, .img_4, .img_5, .img_6
+	{
+		margin: 0;
+		width: 30%;
+		max-width: 400px;
+		margin: 50px;
+	}
+
+	.pie_pagina .contacto
+	{
+		display: block;
+		float: left;
+		width: 25%;
+	}
+
+
+	.pie_pagina .terminos
+	{
+		display: block;
+		float: left;
+		width: 25%;
+	}
+
+
+	.pie_pagina .redes_sociales
+	{
+		display: block;
+		float: left;
+		width: 25%;
+	}
+
+
+	.pie_pagina .copyright
+	{
+		display: block;
+		float: right;
+		width: 25%;
+	}
+
+
+
+
+
+}
