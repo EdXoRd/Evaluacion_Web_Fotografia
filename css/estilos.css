@@ -1,0 +1,213 @@
+body
+{
+	background-color: #02010a;
+	font-family: 'Dancing Script';
+}
+
+
+
+#cabecera{
+	background-color: #5B7989;
+	color: white;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-o-border-radius: 10px 10px 0px 0px;
+	-ms-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+}		
+		
+		#cabecera h1{
+			text-shadow: 2px 2px 2px #02010A;
+			margin-left: 15%;
+		}
+
+		#cabecera nav{
+			float: right;
+			margin-right: 10%;
+		}
+
+		#cabecera nav ul{
+			display: flex;
+			flex-flow: row wrap;
+		}		
+		
+		#cabecera li{
+			list-style: none;
+		}
+
+		#cabecera li a{
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			padding: 20px;
+		}
+
+
+
+
+
+@media all and (max-width: 899px){
+	
+	#contenedor_central{
+		background-color: #82c3a6;
+	}		
+			
+			#contenedor_central img{
+				width: 100%;
+				display: block;
+				margin: auto;
+				padding: 7%;
+				box-sizing: border-box;
+			}
+
+
+
+			#contenedor_secundario, #contenedor_paisajes, #contenedor_retratos{
+				background-color: #d5c75f;
+			}		
+			
+			#contenedor_secundario img, #contenedor_paisajes img, #contenedor_retratos img{
+				width: 100%;
+				padding: 7%;
+				box-sizing: border-box;
+			}	
+
+
+
+			footer{
+				background-color: #C6d5c5;
+				-webkit-border-radius: 0px 0px 10px 10px;
+				-moz-border-radius: 0px 0px 10px 10px;
+				-o-border-radius: 0px 0px 10px 10px;
+				-ms-border-radius: 0px 0px 10px 10px;
+				border-radius: 0px 0px 10px 10px;
+				text-align: center;
+			}		
+			
+			#contenedor_footer{
+				display: flex;
+				flex-flow: column;
+			}		
+					
+			#contacto, #terminos, #redes_sociales, #copyright{
+				width: 100%;
+			}		
+					
+			#redes_sociales a{
+				display: block;
+			}		
+					
+			#redes_sociales a img{
+				max-height: 23px;
+			}
+
+} /* FINAL MEDIA QUERY DISPOSITIVOS MOVILES */
+
+
+
+@media all and (min-width: 900px){
+	
+	#contenedor_central{
+		background-color: #82c3a6;
+	}		
+			#contenedor_central img{
+				max-width: 80%;
+				display: block;
+				margin: auto;
+				padding: 50px 0 50px 0;
+			}
+
+
+
+			#contenedor_secundario, #contenedor_paisajes, #contenedor_retratos{
+				background-color: #d5c75f;
+				border: 1px solid black;
+				padding: 75px 0 75px 0;
+				justify-content: space-between;
+			}		
+
+			#contenedor_secundario img{
+				max-width: 45%;
+			}		
+
+			#contenedor_paisajes img, #contenedor_retratos img{
+				max-width: 25%;
+			}
+
+			.paisaje, .retratos{
+				padding: 25px;
+			}
+
+			#img_secundarias, #grupo_paisajes, #grupo_retratos{
+				text-align: center;
+				justify-content: space-between;
+			}
+
+			.img_izq, .img_der{
+				border: 1px solid black;
+				box-shadow: 2px 2px 2px #02010a;				
+			}
+
+			.img_izq:hover{
+				transition: ease 1s;
+				transform: rotate(10deg);
+				box-shadow: 2px 2px 2px #82c3a6;
+			}
+
+			.img_der:hover{
+				transition: ease 1s;
+				transform: translate(5px, -20px);
+				box-shadow: 2px 2px 2px #82c3a6;
+			}
+
+			#contenedor_secundario div > p{
+				display: inline;
+				font-weight: bold;
+				text-decoration: underline;
+				font-size: 1.2em;
+			}
+
+
+
+
+
+
+			footer{
+				clear: both;
+				background-color: #C6d5c5;
+				-webkit-border-radius: 0px 0px 10px 10px;
+				-moz-border-radius: 0px 0px 10px 10px;
+				-o-border-radius: 0px 0px 10px 10px;
+				-ms-border-radius: 0px 0px 10px 10px;
+				border-radius: 0px 0px 10px 10px;
+			}		
+
+			#contenedor_footer{
+				display: flex;
+				flex-flow: row wrap;
+			}		
+
+			#contacto, #terminos, #redes_sociales, #copyright{
+				width: 25%;
+				padding-left: 3%;
+				box-sizing: border-box;
+			}		
+
+			.foot_title{
+				text-align: center;
+			}		
+
+			#redes_sociales a{
+				display: block;
+			}		
+
+			#redes_sociales a img{
+				max-height: 23px;
+			}
+
+
+} /* FINAL MEDIA QUERY EQUIPOS DE ESCRITORIO */
