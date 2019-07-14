@@ -15,7 +15,6 @@ body
 	-o-border-radius: 10px 10px 0px 0px;
 	-ms-border-radius: 10px 10px 0px 0px;
 	border-radius: 10px 10px 0px 0px;
-	
 }		
 		
 #cabecera h1{
@@ -39,79 +38,103 @@ body
 	padding: 20px;
 }
 
-
-
-/* ------------------------- DISPOSITIVOS MOVILES ------------------------- */
-
-@media all and (max-width: 899px){
-	
-#cabecera{
-	width: 100%;
-	display: inline-block;
-}
-
-#cabecera h1{
-	text-shadow: 2px 2px 2px #02010A;
-	text-align: center;
-	margin: 0;
-}
-
-#cabecera nav{
-	display: flex;
-	text-align: center;		
-}
-
 #contenedor_central{
 	background-color: #82c3a6;
-}		
-			
-#contenedor_central img{
-	width: 100%;
-	display: block;
-	margin: auto;
-	padding: 7%;
-	box-sizing: border-box;
-}
+}	
 
 #contenedor_secundario, #contenedor_paisajes, #contenedor_retratos{
 	background-color: #d5c75f;
-}		
+	border: 1px solid black;
+	justify-content: space-between;
+}
 
-#contenedor_secundario img, #contenedor_paisajes img, #contenedor_retratos img{
-	width: 100%;
-	padding: 7%;
-	box-sizing: border-box;
-}	
+#img1{
+	filter: blur(10px);
+}
+
+#img3{
+	-webkit-filter: sepia(90%);
+	-moz-filter: sepia(90%);
+	-ms-filter: sepia(90%);
+	-o-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+#img2, #img4, #img6{
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
 
 footer{
+	clear: both;
 	background-color: #C6d5c5;
 	-webkit-border-radius: 0px 0px 10px 10px;
 	-moz-border-radius: 0px 0px 10px 10px;
 	-o-border-radius: 0px 0px 10px 10px;
 	-ms-border-radius: 0px 0px 10px 10px;
 	border-radius: 0px 0px 10px 10px;
-	text-align: center;
-}		
-
-#contenedor_footer{
-	display: flex;
-	flex-flow: column;
-}		
-		
-#contacto, #terminos, #redes_sociales, #copyright{
-	width: 100%;
-	font-weight: bold;
-	padding: 3%;
-	box-sizing: border-box;
-}		
-		
-#redes_sociales a{
-	display: block;
-}		
-		
-#redes_sociales a img{
-	max-height: 23px;
 }
+
+/* ------------------------- DISPOSITIVOS MOVILES ------------------------- */
+
+@media all and (max-width: 899px){
+	
+	#cabecera{
+		width: 100%;
+		display: inline-block;
+	}
+
+	#cabecera h1{
+		text-shadow: 2px 2px 2px #02010A;
+		text-align: center;
+		margin: 0;
+	}
+
+	nav{
+		/*display: flex;*/
+		align-items: center;		
+	}	
+				
+	#contenedor_central img{
+		width: 100%;
+		display: block;
+		margin: auto;
+		padding: 7%;
+		box-sizing: border-box;
+	}
+
+	#contenedor_secundario img, #contenedor_paisajes img, #contenedor_retratos img{
+		width: 100%;
+		padding: 7%;
+		box-sizing: border-box;
+	}	
+
+	footer{
+		text-align: center;
+	}		
+
+	#contenedor_footer{
+		display: flex;
+		flex-flow: column;
+	}		
+			
+	#contacto, #terminos, #redes_sociales, #copyright{
+		width: 100%;
+		font-weight: bold;
+		padding: 3%;
+		box-sizing: border-box;
+	}		
+			
+	#redes_sociales a{
+		display: block;
+	}		
+			
+	#redes_sociales a img{
+		max-height: 23px;
+	}
 
 }
 
@@ -132,108 +155,84 @@ footer{
 	#cabecera nav{
 			float: right;
 			margin-right: 10%;
-		}
+	}
+	
+	#contenedor_central img{
+		max-width: 80%;
+		display: block;
+		margin: auto;
+		padding: 50px 0 50px 0;
+	}
 
 
-	#contenedor_central{
-		background-color: #82c3a6;
+	#contenedor_secundario img{
+		max-width: 45%;
 	}		
-			#contenedor_central img{
-				max-width: 80%;
-				display: block;
-				margin: auto;
-				padding: 50px 0 50px 0;
-			}
 
+	#contenedor_paisajes img, #contenedor_retratos img{
+		max-width: 25%;
+	}
 
+	.paisaje, .retratos{
+		padding: 25px;
+	}
 
-			#contenedor_secundario, #contenedor_paisajes, #contenedor_retratos{
-				background-color: #d5c75f;
-				border: 1px solid black;
-				padding: 75px 0 75px 0;
-				justify-content: space-between;
-			}		
+	#contenedor_secundario, #contenedor_paisajes, #contenedor_retratos{
+		padding: 75px 0 75px 0;
+	}
 
-			#contenedor_secundario img{
-				max-width: 45%;
-			}		
+	#img_secundarias, #grupo_paisajes, #grupo_retratos{
+		text-align: center;
+		justify-content: space-between;
+	}
 
-			#contenedor_paisajes img, #contenedor_retratos img{
-				max-width: 25%;
-			}
+	.img_izq, .img_der{
+		border: 1px solid black;
+		box-shadow: 2px 2px 2px #02010a;				
+	}
 
-			.paisaje, .retratos{
-				padding: 25px;
-			}
+	.img_izq:hover{
+		transition: ease 1s;
+		transform: rotate(10deg);
+		box-shadow: 2px 2px 2px #82c3a6;
+	}
 
-			#img_secundarias, #grupo_paisajes, #grupo_retratos{
-				text-align: center;
-				justify-content: space-between;
-			}
+	.img_der:hover{
+		transition: ease 1s;
+		transform: translate(5px, -20px);
+		box-shadow: 2px 2px 2px #82c3a6;
+	}
 
-			.img_izq, .img_der{
-				border: 1px solid black;
-				box-shadow: 2px 2px 2px #02010a;				
-			}
+	/*#contenedor_secundario div > p{
+		display: inline;
+		font-weight: bold;
+		text-decoration: underline;
+		font-size: 1.2em;
+	}	*/		
 
-			.img_izq:hover{
-				transition: ease 1s;
-				transform: rotate(10deg);
-				box-shadow: 2px 2px 2px #82c3a6;
-			}
+	#contenedor_footer{
+		display: flex;
+		flex-flow: row wrap;
+	}		
 
-			.img_der:hover{
-				transition: ease 1s;
-				transform: translate(5px, -20px);
-				box-shadow: 2px 2px 2px #82c3a6;
-			}
+	#contacto, #terminos, #redes_sociales, #copyright{
+		width: 25%;
+		padding-left: 3%;
+		box-sizing: border-box;
+		font-weight: bold;
+		font-size: 1.2em;
+	}		
 
-			#contenedor_secundario div > p{
-				display: inline;
-				font-weight: bold;
-				text-decoration: underline;
-				font-size: 1.2em;
-			}
+	.foot_title{
+		text-align: center;
+	}		
 
+	#redes_sociales a{
+		display: block;
+	}		
 
+	#redes_sociales a img{
+		max-height: 23px;
+	}
 
-
-
-
-			footer{
-				clear: both;
-				background-color: #C6d5c5;
-				-webkit-border-radius: 0px 0px 10px 10px;
-				-moz-border-radius: 0px 0px 10px 10px;
-				-o-border-radius: 0px 0px 10px 10px;
-				-ms-border-radius: 0px 0px 10px 10px;
-				border-radius: 0px 0px 10px 10px;
-			}		
-
-			#contenedor_footer{
-				display: flex;
-				flex-flow: row wrap;
-			}		
-
-			#contacto, #terminos, #redes_sociales, #copyright{
-				width: 25%;
-				padding-left: 3%;
-				box-sizing: border-box;
-				font-weight: bold;
-				font-size: 1.2em;
-			}		
-
-			.foot_title{
-				text-align: center;
-			}		
-
-			#redes_sociales a{
-				display: block;
-			}		
-
-			#redes_sociales a img{
-				max-height: 23px;
-			}
-
-
-} /* FINAL MEDIA QUERY EQUIPOS DE ESCRITORIO */
+}
