@@ -5,6 +5,7 @@ body
 }
 
 
+/* ------------------------- ESTILOS GENERALES ------------------------- */
 
 #cabecera{
 	background-color: #5B7989;
@@ -14,103 +15,126 @@ body
 	-o-border-radius: 10px 10px 0px 0px;
 	-ms-border-radius: 10px 10px 0px 0px;
 	border-radius: 10px 10px 0px 0px;
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: space-between;
+	
 }		
 		
-		#cabecera h1{
-			text-shadow: 2px 2px 2px #02010A;
-			margin-left: 15%;
-		}
+#cabecera h1{
+	text-shadow: 2px 2px 2px #02010A;
+	margin-left: 15%;
+}
 
-		#cabecera nav{
-			float: right;
-			margin-right: 10%;
-		}
+#cabecera nav ul{
+	display: flex;
+	flex-flow: row wrap;
+}		
 
-		#cabecera nav ul{
-			display: flex;
-			flex-flow: row wrap;
-		}		
-		
-		#cabecera li{
-			list-style: none;
-		}
+#cabecera li{
+	list-style: none;
+}
 
-		#cabecera li a{
-			color: white;
-			text-decoration: none;
-			font-weight: bold;
-			padding: 20px;
-		}
+#cabecera li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 20px;
+}
 
 
 
-
+/* ------------------------- DISPOSITIVOS MOVILES ------------------------- */
 
 @media all and (max-width: 899px){
 	
-	#contenedor_central{
-		background-color: #82c3a6;
-	}		
+#cabecera{
+	width: 100%;
+	display: inline-block;
+}
+
+#cabecera h1{
+	text-shadow: 2px 2px 2px #02010A;
+	text-align: center;
+	margin: 0;
+}
+
+#cabecera nav{
+	display: flex;
+	text-align: center;		
+}
+
+#contenedor_central{
+	background-color: #82c3a6;
+}		
 			
-			#contenedor_central img{
-				width: 100%;
-				display: block;
-				margin: auto;
-				padding: 7%;
-				box-sizing: border-box;
-			}
+#contenedor_central img{
+	width: 100%;
+	display: block;
+	margin: auto;
+	padding: 7%;
+	box-sizing: border-box;
+}
+
+#contenedor_secundario, #contenedor_paisajes, #contenedor_retratos{
+	background-color: #d5c75f;
+}		
+
+#contenedor_secundario img, #contenedor_paisajes img, #contenedor_retratos img{
+	width: 100%;
+	padding: 7%;
+	box-sizing: border-box;
+}	
+
+footer{
+	background-color: #C6d5c5;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-o-border-radius: 0px 0px 10px 10px;
+	-ms-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
+	text-align: center;
+}		
+
+#contenedor_footer{
+	display: flex;
+	flex-flow: column;
+}		
+		
+#contacto, #terminos, #redes_sociales, #copyright{
+	width: 100%;
+	font-weight: bold;
+	padding: 3%;
+	box-sizing: border-box;
+}		
+		
+#redes_sociales a{
+	display: block;
+}		
+		
+#redes_sociales a img{
+	max-height: 23px;
+}
+
+}
 
 
-
-			#contenedor_secundario, #contenedor_paisajes, #contenedor_retratos{
-				background-color: #d5c75f;
-			}		
-			
-			#contenedor_secundario img, #contenedor_paisajes img, #contenedor_retratos img{
-				width: 100%;
-				padding: 7%;
-				box-sizing: border-box;
-			}	
-
-
-
-			footer{
-				background-color: #C6d5c5;
-				-webkit-border-radius: 0px 0px 10px 10px;
-				-moz-border-radius: 0px 0px 10px 10px;
-				-o-border-radius: 0px 0px 10px 10px;
-				-ms-border-radius: 0px 0px 10px 10px;
-				border-radius: 0px 0px 10px 10px;
-				text-align: center;
-			}		
-			
-			#contenedor_footer{
-				display: flex;
-				flex-flow: column;
-			}		
-					
-			#contacto, #terminos, #redes_sociales, #copyright{
-				width: 100%;
-			}		
-					
-			#redes_sociales a{
-				display: block;
-			}		
-					
-			#redes_sociales a img{
-				max-height: 23px;
-			}
-
-} /* FINAL MEDIA QUERY DISPOSITIVOS MOVILES */
-
+/* ------------------------- DISPOSITIVOS DE ESCRITORIO ------------------------- */
 
 
 @media all and (min-width: 900px){
 	
+	#cabecera{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+
+	#cabecera nav{
+			float: right;
+			margin-right: 10%;
+		}
+
+
 	#contenedor_central{
 		background-color: #82c3a6;
 	}		
@@ -195,6 +219,8 @@ body
 				width: 25%;
 				padding-left: 3%;
 				box-sizing: border-box;
+				font-weight: bold;
+				font-size: 1.2em;
 			}		
 
 			.foot_title{
