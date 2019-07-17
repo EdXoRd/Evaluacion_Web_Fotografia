@@ -15,6 +15,7 @@ body
 	-o-border-radius: 10px 10px 0px 0px;
 	-ms-border-radius: 10px 10px 0px 0px;
 	border-radius: 10px 10px 0px 0px;
+
 }		
 		
 #cabecera h1{
@@ -33,9 +34,12 @@ body
 
 #cabecera li a{
 	color: white;
-	text-decoration: none;
 	font-weight: bold;
 	padding: 20px;
+}
+
+#cabecera li a:active, #cabecera li a:hover{
+	text-decoration: none;
 }
 
 #contenedor_central{
