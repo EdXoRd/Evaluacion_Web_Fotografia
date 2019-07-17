@@ -4,6 +4,23 @@ body
 	font-family: 'Dancing Script';
 }
 
+.contenido{
+	animation: animationContenido 1.5s;
+}
+
+@keyframes animationContenido {
+	0% {
+		margin-top: 150%;
+	}
+
+	60% {
+		margin-top: -5%;
+	}
+	100% {
+		margin-top: 0;
+	}
+}
+
 
 /* ------------------------- ESTILOS GENERALES ------------------------- */
 
@@ -160,6 +177,11 @@ footer{
 			float: right;
 			margin-right: 10%;
 	}
+
+	#img_secundarias{
+		display: flex;
+		flex-direction: row;
+	}
 	
 	#contenedor_central img{
 		max-width: 80%;
@@ -170,7 +192,7 @@ footer{
 
 
 	#contenedor_secundario img{
-		max-width: 45%;
+		max-width: 75%;
 	}		
 
 	#contenedor_paisajes img, #contenedor_retratos img{
